@@ -1333,3 +1333,13 @@ Processing by AuthorsController#show as HTML
   [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?  [["author_id", 14]]
   Rendered authors/show.html.erb within layouts/application (15.5ms)
 Completed 200 OK in 50ms (Views: 44.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/authors/13" for 143.252.80.100 at 2019-01-31 13:53:39 +0000
+Cannot render console from 143.252.80.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?  [["author_id", 13]]
+  Rendered authors/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.3ms)
